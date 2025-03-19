@@ -1,0 +1,44 @@
+
+
+Tue, 13 Jun 2023 16:22:59 GMT :: MySqlException
+Access denied for user 'root'@'localhost' (using password: YES)
+Stacktrace:
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Threading.Tasks.ValueTask`1.get_Result()
+   bei MySqlConnector.Core.ServerSession.<SwitchAuthenticationAsync>d__85.MoveNext() in /_/src/MySqlConnector/Core/ServerSession.cs:Zeile 711.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   bei MySqlConnector.Core.ServerSession.<ConnectAsync>d__83.MoveNext() in /_/src/MySqlConnector/Core/ServerSession.cs:Zeile 573.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei MySqlConnector.Core.ConnectionPool.<ConnectSessionAsync>d__22.MoveNext() in /_/src/MySqlConnector/Core/ConnectionPool.cs:Zeile 403.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei MySqlConnector.Core.ConnectionPool.<ConnectSessionAsync>d__22.MoveNext() in /_/src/MySqlConnector/Core/ConnectionPool.cs:Zeile 408.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Threading.Tasks.ValueTask`1.get_Result()
+   bei MySqlConnector.Core.ConnectionPool.<GetSessionAsync>d__10.MoveNext() in /_/src/MySqlConnector/Core/ConnectionPool.cs:Zeile 98.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei MySqlConnector.Core.ConnectionPool.<GetSessionAsync>d__10.MoveNext() in /_/src/MySqlConnector/Core/ConnectionPool.cs:Zeile 128.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Threading.Tasks.ValueTask`1.get_Result()
+   bei MySqlConnector.MySqlConnection.<CreateSessionAsync>d__124.MoveNext() in /_/src/MySqlConnector/MySqlConnection.cs:Zeile 929.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   bei MySqlConnector.MySqlConnection.<OpenAsync>d__26.MoveNext() in /_/src/MySqlConnector/MySqlConnection.cs:Zeile 436.
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:Zeile 382.
+   bei waerp_management.FirstTimeStartup.FirstTimeStartUpWindow.TestConnection_Click(Object sender, RoutedEventArgs e) in C:\Users\domin\Source\Workspaces\waerp.inventorysystem\waerp-management\Installation\FirstTimeStartUpWindow.xaml.cs:Zeile 343.
